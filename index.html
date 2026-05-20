@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouira Ring - Perhiasan Terapi Cemas</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Glacial Indifference Font -->
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f7f4',
+                            100: '#e3ebe2', /* Soft Sage Green */
+                            200: '#c7d6c4',
+                            300: '#a3bda0',
+                            400: '#7f9e7b',
+                            500: '#5A6F56', /* Darker Sage for Text */
+                            600: '#435540',
+                        },
+                        pinkAccent: {
+                            400: '#EFA6B0',
+                            500: '#E58A96', /* Bold Soft Pink */
+                            600: '#D96E7C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Glacial Indifference"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background-color: #e3ebe2;
+            /* sage-100 */
+        }
+
+        /* Subtle float animation for the hero image */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col text-sage-600">
+
+    <!-- Header / Navbar -->
+    <header class="py-6 px-8 flex justify-between items-center max-w-6xl mx-auto w-full">
+        <div class="text-3xl font-bold tracking-widest text-sage-600">OUIRA</div>
+        <nav class="hidden md:flex gap-8">
+            <a href="#fitur" class="text-sage-500 hover:text-pinkAccent-500 transition-colors">Fitur</a>
+            <a href="#material" class="text-sage-500 hover:text-pinkAccent-500 transition-colors">Material</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center">
+
+        <!-- Hero Section -->
+        <section class="w-full max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center relative">
+
+            <!-- Background Decorative Blob -->
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-white opacity-40 rounded-full blur-3xl -z-10 pointer-events-none">
+            </div>
+
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-sage-600 max-w-4xl drop-shadow-sm">
+                Jadikan Jemarimu <span class="text-pinkAccent-500">Ruang Tenang</span> dalam Berisiknya Pikiran.
+            </h1>
+
+            <p class="text-lg md:text-xl text-sage-500 mb-10 max-w-2xl leading-relaxed">
+                Ouira Ring hadir sebagai teman setiamu. Putar perlahan dan rasakan setiap detik kecemasan memudar
+                menjadi kedamaian yang seutuhnya.
+            </p>
+
+            <a href="#cta"
+                class="inline-block bg-pinkAccent-500 hover:bg-pinkAccent-600 text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                Klaim Diskon 15% Sekarang
+            </a>
+
+            <!-- Hero Image Showcase -->
+            <div
+                class="mt-20 w-full max-w-4xl rounded-[2.5rem] bg-white bg-opacity-40 p-4 shadow-xl border border-white border-opacity-60 backdrop-blur-md animate-float">
+                <img src="image/katalogouira.png" alt="Ouira Ring"
+                    class="w-full h-[400px] md:h-[500px] object-cover rounded-[2rem]">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="fitur"
+            class="w-full bg-sage-50 bg-opacity-60 py-24 backdrop-blur-sm border-y border-white border-opacity-40">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-sage-600 mb-16">Mengapa Memilih Ouira?</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white">
+                        <div
+                            class="w-14 h-14 bg-pinkAccent-500 bg-opacity-10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-pinkAccent-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-sage-600">Fokus Kembali</h3>
+                        <p class="text-sage-500 leading-relaxed">Bantu pikiranmu terpusat kembali di tengah distraksi
+                            dengan gerakan memutar yang halus.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white">
+                        <div
+                            class="w-14 h-14 bg-pinkAccent-500 bg-opacity-10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-pinkAccent-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-sage-600">Sayangi Jarimu</h3>
+                        <p class="text-sage-500 leading-relaxed">Desain ergonomis yang menghentikan kebiasaan menggigit
+                            kuku atau mengelupas kulit jari.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white">
+                        <div
+                            class="w-14 h-14 bg-pinkAccent-500 bg-opacity-10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-pinkAccent-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-sage-600">Mindfulness</h3>
+                        <p class="text-sage-500 leading-relaxed">Hadir seutuhnya di momen ini. Setiap putaran membawamu
+                            kembali ke masa kini yang damai.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div
+                        class="bg-white bg-opacity-70 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-white">
+                        <div
+                            class="w-14 h-14 bg-pinkAccent-500 bg-opacity-10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-7 h-7 text-pinkAccent-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-sage-600">Pereda Stres</h3>
+                        <p class="text-sage-500 leading-relaxed">Mekanisme pemintalan lembut yang secara instan
+                            menurunkan ketegangan dan stres harian.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="galeri" class="w-full max-w-6xl mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <span class="text-pinkAccent-500 font-bold tracking-widest text-sm uppercase">The Collection</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-sage-600 mt-1">Eksplorasi Setiap Detail Keindahan
+                    </h2>
+                </div>
+                <p class="text-sage-500 text-sm md:text-base max-w-md mt-2 md:mt-0">
+                    Geser untuk melihat bagaimana Ouira dirancang dengan presisi untuk menemani keseharianmu.
+                </p>
+            </div>
+
+            <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 scroll-smooth"
+                style="scrollbar-width: none; -ms-overflow-style: none;">
+                <style>
+                    .flex::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+
+                <div
+                    class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-16px)] snap-start bg-white p-3 rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 border border-white">
+                    <img src="image/8.png" alt="Ouira Catalog 1"
+                        class="w-full h-[350px] object-cover rounded-[1.7rem] mb-4">
+                    <div class="px-3 pb-2">
+                        <h4 class="font-bold text-sage-600 text-lg">Elegant Inside the Box</h4>
+                        <p class="text-sm text-sage-500">Tampilan premium di dalam box kemasan.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-16px)] snap-start bg-white p-3 rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 border border-white">
+                    <img src="image/6.png" alt="Ouira Catalog 2"
+                        class="w-full h-[350px] object-cover rounded-[1.7rem] mb-4">
+                    <div class="px-3 pb-2">
+                        <h4 class="font-bold text-sage-600 text-lg">Minimalist Vibe</h4>
+                        <p class="text-sm text-sage-500">Sempurna dipadukan dengan outfit harianmu.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-16px)] snap-start bg-white p-3 rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 border border-white">
+                    <img src="image/7.png" alt="Ouira Catalog 3"
+                        class="w-full h-[350px] object-cover rounded-[1.7rem] mb-4">
+                    <div class="px-3 pb-2">
+                        <h4 class="font-bold text-sage-600 text-lg">The Perfect Calmer</h4>
+                        <p class="text-sm text-sage-500">Mekanisme putaran beads yang super halus.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-16px)] snap-start bg-white p-3 rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 border border-white">
+                    <img src="image/5.png" alt="Ouira Catalog 4"
+                        class="w-full h-[350px] object-cover rounded-[1.7rem] mb-4">
+                    <div class="px-3 pb-2">
+                        <h4 class="font-bold text-sage-600 text-lg">The Classic Sparkle</h4>
+                        <p class="text-sm text-sage-500">Detail beads sterling silver ikonik.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="min-w-[85%] sm:min-w-[45%] md:min-w-[calc(33.333%-16px)] snap-start bg-white p-3 rounded-[2rem] shadow-md hover:shadow-xl transition-all duration-300 border border-white">
+                    <img src="image/9.png" alt="Ouira Catalog 5"
+                        class="w-full h-[350px] object-cover rounded-[1.7rem] mb-4">
+                    <div class="px-3 pb-2">
+                        <h4 class="font-bold text-sage-600 text-lg">Elegance Defined</h4>
+                        <p class="text-sm text-sage-500">Kembalikan ketenangan di ujung jemarimu.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Material Details Section -->
+        <section id="material"
+            class="w-full max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 relative">
+                <div
+                    class="absolute inset-0 bg-pinkAccent-500 opacity-20 blur-3xl rounded-full transform -translate-x-6 translate-y-6">
+                </div>
+                <img src="image/POSTEROUIRAFIX.png" alt="Detail Ouira Ring"
+                    class="rounded-[2.5rem] shadow-2xl w-full h-auto object-cover relative z-10 border-[6px] border-white">
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col items-start text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-sage-600 mb-6">Dibuat dengan Sepenuh Hati</h2>
+
+                <div
+                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-white bg-opacity-60 text-pinkAccent-600 font-bold rounded-full mb-8 shadow-sm border border-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    Premium Sterling Silver 925
+                </div>
+
+                <p class="text-lg text-sage-500 mb-6 leading-relaxed">
+                    Setiap Ouira Ring dibentuk menggunakan material <strong class="text-sage-600">Premium Sterling
+                        Silver 925</strong>. Tidak hanya indah dipandang, tetapi juga tahan lama, hipoalergenik, dan
+                    aman untuk pemakaian sehari-hari tanpa meninggalkan bekas di kulit.
+                </p>
+                <p class="text-lg text-sage-500 leading-relaxed mb-10">
+                    Sentuhan akhirnya dipoles dengan sangat presisi, memastikan mekanisme putaran berjalan mulus tanpa
+                    hambatan, memberikan sensasi taktil yang memuaskan setiap kali Anda membutuhkannya.
+                </p>
+
+                <a href="#cta"
+                    class="text-pinkAccent-500 font-bold text-lg hover:text-pinkAccent-600 flex items-center gap-3 group bg-white px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all border border-pinkAccent-500 border-opacity-20">
+                    Pesan Milikmu Sekarang
+                    <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="cta" class="w-full bg-pinkAccent-500 text-white py-20 mt-10">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Mulai Perjalanan Tenangmu</h2>
+                <p class="text-lg mb-10 opacity-90 max-w-2xl mx-auto">
+                    Kendalikan kecemasanmu dengan gaya. Dapatkan diskon 15% untuk pembelian pertamamu hari ini. Stok
+                    terbatas!
+                </p>
+                <form class="flex flex-col md:flex-row justify-center gap-4 max-w-lg mx-auto">
+                    <input type="email" placeholder="Masukkan email Anda"
+                        class="px-6 py-4 rounded-full text-sage-600 focus:outline-none focus:ring-4 focus:ring-pinkAccent-400 focus:ring-opacity-50 flex-grow shadow-inner">
+                    <button type="button"
+                        class="bg-sage-600 hover:bg-sage-500 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-colors whitespace-nowrap">
+                        Klaim Diskon
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-sage-600 text-sage-50 py-12 text-center">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-3xl font-bold tracking-widest mb-4">OUIRA</div>
+            <p class="text-sage-200 mb-8 font-medium">Ruang tenang di ujung jarimu.</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="text-sage-200 hover:text-pinkAccent-400 transition-colors">Instagram</a>
+                <a href="#" class="text-sage-200 hover:text-pinkAccent-400 transition-colors">TikTok</a>
+                <a href="#" class="text-sage-200 hover:text-pinkAccent-400 transition-colors">WhatsApp</a>
+            </div>
+            <p class="text-sm text-sage-300">&copy; 2026 Ouira Ring. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
